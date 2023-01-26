@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#gameArea {
+  width: 70%;
+  height: 80vh;
+  background-color: lightgrey;
+  position: relative;
+}
+
+#clickBox {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 20px solid lightblue;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
