@@ -1,4 +1,4 @@
-export default function clickBoxFctn() {
+export default function setClickBox() {
     let counter = document.getElementById('counter');
     let clickBox = document.getElementById('clickBox');
     let count = 0;

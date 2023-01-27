@@ -22,6 +22,24 @@
   box-shadow: 5px -5px white;
 }
 
+#colorArea {
+  width: 20vw;
+  height: 20vw;
+  background-color: grey;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.colorCard {
+  width: 33%;
+  height: 33%;
+  background-color: #b7243c;
+  border: 1px solid black;
+  user-select: none;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Comfortaa", cursive;
