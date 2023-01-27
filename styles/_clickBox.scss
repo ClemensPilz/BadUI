@@ -1,0 +1,22 @@
+#gameArea {
+  width: 70%;
+  height: 70vh;
+  background-color: $secondary;
+  position: relative;
+  border-radius: 5px;
+}
+
+#clickBox {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 20px solid $primary;
+  background-color: $primary;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 5px;
+  box-shadow: 5px -5px white;
+}

@@ -1,17 +1,10 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  width: 100vw;
-  min-height: 100vh;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 #gameArea {
   width: 70%;
-  height: 80vh;
-  background-color: lightgrey;
+  height: 70vh;
+  background-color: #b7243c;
   position: relative;
+  border-radius: 5px;
 }
 
 #clickBox {
@@ -25,6 +18,41 @@ body {
   background-color: lightblue;
   text-align: center;
   line-height: 2rem;
+  border-radius: 5px;
+  box-shadow: 5px -5px white;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+body {
+  width: 100vw;
+  min-height: 90vh;
+  position: relative;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.text-xl {
+  font-size: x-large;
+}
+.text-dark {
+  color: #221f22;
+}
+.text-light {
+  color: #ececec;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #221f22;
 }
 
 /*# sourceMappingURL=style.css.map */

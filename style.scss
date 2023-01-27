@@ -1,30 +1,39 @@
-@import './_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import 'styles/_variables';
+@import 'styles/_clickBox';
 
 * {
   box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
 }
 
 body {
   width: 100vw;
-  min-height: 100vh;
-}
-
-#gameArea {
-  width: 70%;
-  height: 80vh;
-  background-color: $secondary;
+  min-height: 90vh;
   position: relative;
 }
 
-#clickBox {
-  width: 5rem;
-  height: 5rem;
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+
+  &-xl {
+    font-size: x-large;
+  }
+
+  &-dark {
+    color: $dark;
+  }
+
+  &-light {
+    color: $light;
+  }
+}
+
+#footer {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: 20px solid $primary;
-  background-color: $primary;
-  text-align:center;
-  line-height: 2rem;
+  bottom: 0;
+  width: 100%;
+  padding: .7rem;
+  background-color: $dark;
 }
