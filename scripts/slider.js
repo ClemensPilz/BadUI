@@ -22,6 +22,7 @@ export default function setSlider() {
             document.querySelector(".slidecontainer").classList.add("o-50");
             myRange.classList.add("d-none");
             myRangeButton.removeEventListener("click", checkAge);
+            winCount ++;
         }
     }
 }

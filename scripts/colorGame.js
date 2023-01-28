@@ -47,6 +47,7 @@ export default function setColorGame() {
             if (clickCount >= 3) {
                 alert("You did it!")
                 colorArea.classList.add("o-50");
+                winCount ++;
             }
         } else {
             alert("You failed! Get lost, robot!");

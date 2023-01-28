@@ -17,6 +17,7 @@ export default function setClickBox() {
             clickBox.removeEventListener('mouseover', moveClickBox);
             alert('That\'s enough');
             clickBox.parentElement.classList.add("o-50");
+            winCount ++;
         }
 
     }
