@@ -1,30 +1,23 @@
 export default function setColorGame() {
     let colorArea = document.getElementById("colorArea");
+    if (colorArea) { build() }
 
     //Declare variables for the amount of times a user has clicked on the right colorCard
     let clickCount = 0;
 
-    if (colorArea) {
-        document.addEventListener("mousemove", build);
-    }
-
     //Add colorCard*9 to the colorArea
     function build() {
-        document.removeEventListener("mousemove", build);
-        let i = 0;
-        while (i < 9) {
+        for (let i = 0; i < 9; i++) {
             let card = document.createElement("div");
             card.classList.add("colorCard");
 
             //Set a random backgroundColor for your colorCard
-            let colorStrings = ["red", "green", "blue", "yellow"];
+            let colorValues = ["red", "green", "blue", "yellow"];
             let randomColor = Math.floor(Math.random() * 4).toString();
-            card.style.backgroundColor = colorStrings[randomColor];
+            card.style.backgroundColor = colorValues[randomColor];
 
             card.addEventListener("click", checkCard);
-
             colorArea.appendChild(card);
-            i++;
         }
 
 
