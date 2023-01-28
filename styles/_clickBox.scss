@@ -1,9 +1,17 @@
 #gameArea {
-  width: 70%;
-  height: 70vh;
+  width: 300px;
+  height: 300px;
+  margin: 10px 0;
+
   background-color: $secondary;
   position: relative;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 5px -5px $primalight;
+
+  @include lg {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 #clickBox {
@@ -18,5 +26,5 @@
   text-align: center;
   line-height: 2rem;
   border-radius: 5px;
-  box-shadow: 5px -5px white;
+  box-shadow: 5px -5px $primalight;
 }

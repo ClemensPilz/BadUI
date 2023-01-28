@@ -12,10 +12,11 @@ export default function setClickBox() {
         clickBox.style.top = y.toString() + '%';
         clickBox.style.transform = 'translate(-' + x + '%, -' + y + '%)';
         count++;
-        counter.innerText = count;
-        if (count >= 15) {
+        counter.innerText = count.toString();
+        if (count >= 35) {
             clickBox.removeEventListener('mouseover', moveClickBox);
             alert('That\'s enough');
+            clickBox.parentElement.classList.add("o-50");
         }
 
     }

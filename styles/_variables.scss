@@ -1,4 +1,11 @@
-$primary: lightblue;
+$primary: #24b794;
+$primalight:#95b6ae;
 $secondary: #b7243c;
 $dark: #221f22;
 $light: #ececec;
+
+@mixin lg {
+  @media(min-width: 768px) {
+    @content;
+  }
+}

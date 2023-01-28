@@ -12,7 +12,7 @@ export default function setColorGame() {
             card.classList.add("colorCard");
 
             //Set a random backgroundColor for your colorCard
-            let colorValues = ["red", "green", "blue", "yellow"];
+            let colorValues = ["#b7243c", "#24b794"];
             let randomColor = Math.floor(Math.random() * 4).toString();
             card.style.backgroundColor = colorValues[randomColor];
 
@@ -45,7 +45,8 @@ export default function setColorGame() {
             card.removeEventListener("click", checkCard);
             console.log(++clickCount);
             if (clickCount >= 3) {
-                alert("You did it!");
+                alert("You did it!")
+                colorArea.classList.add("o-50");
             }
         } else {
             alert("You failed! Get lost, robot!");
