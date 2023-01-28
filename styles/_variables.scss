@@ -1,7 +1,7 @@
-$primary: #24b794;
-$primalight:#95b6ae;
-$secondary: #b7243c;
-$dark: #221f22;
+$primary: #5200ff;
+$primalight:#d0baff;
+$secondary: #d6f31f;
+$dark: #5200ff;
 $light: #ececec;
 
 @mixin lg {
@@ -9,3 +9,13 @@ $light: #ececec;
     @content;
   }
 }
+
+
+
+
+/*
+$primary: #24b794;
+$primalight:#95b6ae;
+$secondary: #b7243c;
+$dark: #221f22;
+$light: #ececec;*/

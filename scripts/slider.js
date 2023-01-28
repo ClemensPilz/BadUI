@@ -1,4 +1,4 @@
-export default function slider() {
+export default function setSlider() {
     let myRange = document.getElementById("myRange");
     let myRangeOutput = document.getElementById("myRangeOutput");
     let myRangeButton = document.getElementById("myRangeButton");

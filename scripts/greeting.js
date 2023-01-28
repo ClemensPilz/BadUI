@@ -1,4 +1,4 @@
-export default function greeting() {
+export default function setGreeting() {
     let greeting = document.getElementById("greeting");
     let enter = document.getElementById("enter");
 

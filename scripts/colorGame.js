@@ -12,8 +12,8 @@ export default function setColorGame() {
             card.classList.add("colorCard");
 
             //Set a random backgroundColor for your colorCard
-            let colorValues = ["#b7243c", "#24b794"];
-            let randomColor = Math.floor(Math.random() * 4).toString();
+            let colorValues = ["#5200ff", "#d6f31f"];
+            let randomColor = Math.floor(Math.random() * 2).toString();
             card.style.backgroundColor = colorValues[randomColor];
 
             card.addEventListener("click", checkCard);
@@ -22,7 +22,7 @@ export default function setColorGame() {
 
 
         //Distribute colorStrings randomly within your colorCards and add their value as data-val
-        let colorStrings = ["red", "red", "red", "green", "green", "blue", "blue", "yellow", "yellow"];
+        let colorStrings = ["red", "yellow", "red", "green", "green", "blue", "blue", "yellow", "yellow"];
         shuffle(colorStrings);
         let cards = document.querySelectorAll(".colorCard");
         for (let j = 0; j < 9; j++) {
@@ -40,7 +40,7 @@ export default function setColorGame() {
 
     function checkCard(e) {
         let card = e.currentTarget;
-        if (card.dataset.val === "red") {
+        if (card.dataset.val === "yellow") {
             /*clickCount ++;*/
             card.removeEventListener("click", checkCard);
             console.log(++clickCount);

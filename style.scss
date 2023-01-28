@@ -4,6 +4,7 @@
 @import 'styles/_clickBox';
 @import 'styles/_colorGame';
 @import 'styles/_slider';
+@import 'styles/_carousel';
 
 * {
   box-sizing: border-box;
@@ -89,11 +90,11 @@ body {
   right: 0;
   transform: rotate(-90deg) translate(-50%, 200%);
   font-size: 2rem;
-  font-weight: 600;
-  color: white;
+  font-weight: 700;
+  color: $primalight;
   @include lg {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 5rem;
+    font-weight: 900;
   }
 
 }
