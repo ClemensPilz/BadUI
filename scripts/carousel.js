@@ -44,7 +44,7 @@ export default async function setCarousel() {
             if ((leftVal * (-1)) % 1000 == 0) {
                 leftVal = 0;
             }
-            setTimeout(go, 1);
+            setTimeout(go, 10);
         }
     }
 }
