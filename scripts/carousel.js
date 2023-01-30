@@ -28,6 +28,7 @@ export default async function setCarousel() {
 
     function catTime() {
         document.body.innerHTML = "";
+        document.body.style.boxShadow = "0 0 0 white";
         let img = document.createElement("img");
         img.src = "./images/cat.gif";
         document.body.appendChild(img);

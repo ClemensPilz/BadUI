@@ -1,6 +1,6 @@
 #gameArea {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: 10px 0;
 
   background-color: $secondary;
@@ -9,8 +9,8 @@
   box-shadow: 5px -5px $primalight;
 
   @include lg {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 }
 
