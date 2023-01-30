@@ -14,10 +14,6 @@
 
 html {
   background-color: white;
-
-  @include lg {
-    background-color: white;
-  }
 }
 
 body {
@@ -31,13 +27,6 @@ body {
 
   @include lg {
     width: 768px;
-  }
-}
-
-.bodyShadow {
-  @include lg {
-    padding: 5px 10px;
-    box-shadow: 0 10px 10px lightgrey;
   }
 }
 
@@ -88,14 +77,6 @@ body {
 
 .o-50 {
   opacity: 50%;
-}
-
-.blockLayer {
-  position: absolute;
-  z-index: 9;
-  width: 100vw;
-  height: 500vh;
-  background-color: white;
 }
 
 .nonselect {

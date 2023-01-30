@@ -23,8 +23,6 @@ export default function setGreeting() {
         prompt("Really really really?");
         prompt("But seriously, did you really get it?");
         alert("Move on!");
-        greeting.classList.add("d-none");
-        document.body.classList.add("bodyShadow");
-        document.querySelector(".blockLayer").classList.add("d-none");
+        window.location = "./index.html";
     }
 }

@@ -12,11 +12,7 @@ $secondary: #d6f31f;
 $dark: #5200ff;
 $light: #ececec;*/
 #greeting {
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  z-index: 10;
-  transform: translateX(-50%);
+  margin: auto;
   width: 200px;
   height: 800px;
   padding: 30px;
@@ -161,11 +157,6 @@ $light: #ececec;*/
 html {
   background-color: white;
 }
-@media (min-width: 768px) {
-  html {
-    background-color: white;
-  }
-}
 
 body {
   width: 400px;
@@ -179,13 +170,6 @@ body {
 @media (min-width: 768px) {
   body {
     width: 768px;
-  }
-}
-
-@media (min-width: 768px) {
-  .bodyShadow {
-    padding: 5px 10px;
-    box-shadow: 0 10px 10px lightgrey;
   }
 }
 
@@ -230,14 +214,6 @@ body {
 
 .o-50 {
   opacity: 50%;
-}
-
-.blockLayer {
-  position: absolute;
-  z-index: 9;
-  width: 100vw;
-  height: 500vh;
-  background-color: white;
 }
 
 .nonselect {
