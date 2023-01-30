@@ -9,7 +9,7 @@ export default async function setCarousel() {
 
 
     function firstGo() {
-        if (winCount >= 3) {
+        if (winCount >= 4) {
             carousel.removeEventListener("click", firstGo);
             winButton.addEventListener("click", win, true);
             go();

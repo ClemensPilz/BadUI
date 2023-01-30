@@ -1,3 +1,5 @@
+import shuffle from "./suffle.js";
+
 export default function setColorGame() {
     let colorArea = document.getElementById("colorArea");
     if (colorArea) { build() }
@@ -28,13 +30,6 @@ export default function setColorGame() {
         for (let j = 0; j < 9; j++) {
             cards[j].innerText = colorStrings[j];
             cards[j].dataset.val = colorStrings[j];
-        }
-    }
-
-    function shuffle(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            let j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
         }
     }
 

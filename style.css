@@ -149,6 +149,10 @@ $light: #ececec;*/
   background-color: #0f2130;
 }
 
+.calc {
+  padding: 10px 0;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Comfortaa", cursive;
