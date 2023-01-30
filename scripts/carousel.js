@@ -33,6 +33,16 @@ export default async function setCarousel() {
         img.src = "./images/cat.gif";
         document.body.appendChild(img);
         document.body.style.backgroundColor = "white";
+        let resultDiv = document.createElement("div");
+        let seconds = (Date.now() - startTime) / 1000;
+        let minutes = Math.floor(seconds / 60);
+        let extraSeconds = seconds % 60;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        extraSeconds = extraSeconds < 10 ? "0" + extraSeconds : extraSeconds;
+        console.log(typeof extraSeconds);
+        extraSeconds = extraSeconds.substring(0, 2);
+        resultDiv.innerHTML = 'It took you ' + minutes + ' Minutes and ' + extraSeconds + ' Seconds to complete the Challenge!';
+        document.body.appendChild(resultDiv);
     }
 
     function go() {

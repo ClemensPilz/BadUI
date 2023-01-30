@@ -8,30 +8,12 @@
     <title>Bad U.I. Challenge</title>
 </head>
 <body>
-<!--
-<div id="greeting">
-    <div class="text text-xl text-light">Hello and welcome to my torture-chamber!</div>
-    <hr>
-    <div class="text text-light">Aren't <u>you</u> worthy of <i>entering?</i></div>
-    <br>
-    <div class="text text-light d-none">Yes</div>
-    <div class="text text-light d-none">No</div>
-    <div class="text text-light d-none">Not sure</div>
-    <div class="text text-light d-none">You tell me</div>
-    <div class="text text-light d-none">Yes definitely</div>
-    <div class="text text-light d-none">Ain't I?</div>
-    <div class="text text-light d-none">Just quit already</div>
-    <div class="text text-light d-none">Get lost!</div>
-    <div class="text text-light">Made by Clemens Pilz in 2023<br>Coder's Bay Bad U.I. Battle<br>enter <span id="enter">here</span>,
-        <u>contact</u></div>
-</div>
-
-<div class="blockLayer"></div>-->
 
 <main>
 
     <div id="vertical">TORTURE ME</div>
 
+<!--    Catch the trollface game-->
     <div id="counter" class="text text-xl text-primary">Catch me if you can!</div>
 
     <div id="gameArea">
@@ -40,10 +22,12 @@
         </div>
     </div>
 
+<!--    Verification game with colortiles-->
     <div class="text text-xl text-primary">Verify that you are human</div>
     <div class="text text-primary">Click on the darker tiles</div>
     <div id="colorArea"></div>
 
+<!--    Age slider-->
     <div class="text text-xl text-primary">Enter your age</div>
     <div class="slidecontainer">
         <input type="range" min="-6666" max="6666" value="-6666" class="slider" id="myRange">
@@ -51,11 +35,13 @@
         <button id="myRangeButton">OK</button>
     </div>
 
+<!--    Calc-game with dropdown-select-->
     <div class="calc" id="calc">
         <div class="calcQuestion text text-primary text-xl">What is 2x<span id="calcQuestion"></span>?</div>
         <select id="calcAnswer"></select>
     </div>
 
+<!--    Spinning carousel works once other tasks are completed-->
     <div class="cContainer">
         <div id="carousel" class="carousel">
             <div class="cSlide"></div>

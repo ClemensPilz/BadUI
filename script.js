@@ -1,5 +1,3 @@
-'use strict'
-
 import setGreeting from "./scripts/greeting.js";
 import setClickBox from "./scripts/clickBox.js";
 import setColorGame from "./scripts/colorGame.js";
@@ -16,4 +14,6 @@ function init() {
     setSlider();
     setCarousel();
     setCalc();
+
+    startTime = Date.now();
 }

@@ -14,7 +14,7 @@ $light: #ececec;*/
 #greeting {
   margin: auto;
   width: 200px;
-  height: 800px;
+  min-height: 100vh;
   padding: 30px;
   background-color: #1f4564;
   text-align: center;
