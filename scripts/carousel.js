@@ -38,8 +38,8 @@ export default async function setCarousel() {
         let minutes = Math.floor(seconds / 60);
         let extraSeconds = seconds % 60;
         minutes = minutes < 10 ? "0" + minutes : minutes;
-        extraSeconds = extraSeconds < 10 ? "0" + extraSeconds : extraSeconds;
-        extraSeconds = extraSeconds.toString().substring(0, 2);
+        extraSeconds = extraSeconds < 10 ? parseFloat("0" + extraSeconds) : extraSeconds;
+        extraSeconds = Math.round(extraSeconds);
         resultDiv.innerHTML = 'It took you ' + minutes + ' Minutes and ' + extraSeconds + ' Seconds to complete the Challenge!';
         document.body.appendChild(resultDiv);
         let resultObj = {
