@@ -13,7 +13,7 @@ export default function setClickBox() {
         clickBox.style.transform = 'translate(-' + x + '%, -' + y + '%)';
         count++;
         counter.innerText = count.toString();
-        if (count >= 35) {
+        if (count >= 19) {
             clickBox.removeEventListener('mouseover', moveClickBox);
             alert('That\'s enough');
             clickBox.parentElement.classList.add("o-50");
