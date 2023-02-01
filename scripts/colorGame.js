@@ -1,4 +1,4 @@
-import shuffle from "./suffle.js";
+import shuffle from "./shuffle.js";
 
 export default function setColorGame() {
     let colorArea = document.getElementById("colorArea");
