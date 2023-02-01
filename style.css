@@ -126,8 +126,7 @@
   width: 500px;
   position: relative;
   height: 100%;
-  display: flex;
-  align-items: center;
+  display: block;
   background-color: #1f4564;
   color: #f4f8fa;
 }

@@ -43,8 +43,8 @@ export default async function setCarousel() {
         resultDiv.innerHTML = 'It took you ' + minutes + ' Minutes and ' + extraSeconds + ' Seconds to complete the Challenge!';
         document.body.appendChild(resultDiv);
         let resultObj = {
-            minutes: minutes,
-            seconds: extraSeconds
+            "minutes": minutes,
+            "seconds": extraSeconds
         };
         checkStorage(resultObj);
     }
@@ -71,6 +71,7 @@ export default async function setCarousel() {
 
             if ((leftVal * (-1)) % 1000 == 0) {
                 leftVal = 0;
+                document.querySelectorAll(".cSlide")[1].innerHTML = "";
             }
             setTimeout(go, 10);
         }
