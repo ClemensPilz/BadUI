@@ -2,7 +2,8 @@
 #greeting {
   margin: auto;
   width: 200px;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 530px;
   padding: 30px;
   background-color: #1f4564;
   text-align: center;
