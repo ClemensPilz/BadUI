@@ -1,17 +1,14 @@
 #greeting {
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  z-index: 10;
-  transform: translateX(-50%);
-  width: 300px;
+  margin: auto;
+  width: 200px;
   height: 100vh;
+  min-height: 530px;
   padding: 30px;
   background-color: $primary;
   text-align: center;
 
   @include lg {
-    width: 500px;
+    width: 300px;
   }
 
   div:last-of-type {

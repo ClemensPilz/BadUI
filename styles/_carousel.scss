@@ -3,15 +3,17 @@
   height: 30px;
   overflow: hidden;
   position: relative;
+  margin-top: 10px;
 }
 
 .carousel {
   width: 3000px;
   height: 30px;
   background-color: $primalight;
-  position:absolute;
+  position: absolute;
   display: flex;
 }
+
 
 .cSlide {
   width: 500px;
@@ -19,6 +21,7 @@
   height: 100%;
   display: block;
   background-color: $primary;
+  color: $primalight;
 
   &:nth-child(even) {
     background-color: $secondary;

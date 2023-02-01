@@ -1,25 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-/*
-$primary: #24b794;
-$primalight:#95b6ae;
-$secondary: #b7243c;
-$dark: #221f22;
-$light: #ececec;*/
 #greeting {
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  z-index: 10;
-  transform: translateX(-50%);
-  width: 300px;
+  margin: auto;
+  width: 200px;
   height: 100vh;
+  min-height: 530px;
   padding: 30px;
-  background-color: #5200ff;
+  background-color: #1f4564;
   text-align: center;
 }
 @media (min-width: 768px) {
   #greeting {
-    width: 500px;
+    width: 300px;
   }
 }
 #greeting div:last-of-type {
@@ -30,18 +21,18 @@ $light: #ececec;*/
 }
 
 #gameArea {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: 10px 0;
-  background-color: #d6f31f;
+  background-color: #0f2130;
   position: relative;
   border-radius: 10px;
-  box-shadow: 5px -5px #d0baff;
+  box-shadow: 5px -5px #f4f8fa;
 }
 @media (min-width: 768px) {
   #gameArea {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -52,33 +43,33 @@ $light: #ececec;*/
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: 20px solid #5200ff;
-  background-color: #5200ff;
+  border: 20px solid #1f4564;
+  background-color: #1f4564;
   text-align: center;
   line-height: 2rem;
   border-radius: 5px;
-  box-shadow: 5px -5px #d0baff;
+  box-shadow: 5px -5px #f4f8fa;
 }
 #clickBox img {
   width: 100%;
 }
 
 #colorArea {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: 10px 0;
-  background-color: grey;
+  background-color: #f4f8fa;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  box-shadow: 5px -5px #d0baff;
+  box-shadow: 5px -5px #f4f8fa;
 }
 @media (min-width: 768px) {
   #colorArea {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -86,8 +77,8 @@ $light: #ececec;*/
   width: 33%;
   height: 33%;
   padding: 5px;
-  background-color: #d6f31f;
-  border: 1px solid black;
+  background-color: #1f4564;
+  border: 1px solid #0f2130;
   user-select: none;
 }
 
@@ -98,17 +89,35 @@ $light: #ececec;*/
   width: 100%;
 }
 
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #0f2130;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #1f4564;
+  cursor: pointer;
+}
+
 .cContainer {
   width: 100%;
   height: 30px;
   overflow: hidden;
   position: relative;
+  margin-top: 10px;
 }
 
 .carousel {
   width: 3000px;
   height: 30px;
-  background-color: #d0baff;
+  background-color: #f4f8fa;
   position: absolute;
   display: flex;
 }
@@ -118,10 +127,15 @@ $light: #ececec;*/
   position: relative;
   height: 100%;
   display: block;
-  background-color: #5200ff;
+  background-color: #1f4564;
+  color: #f4f8fa;
 }
 .cSlide:nth-child(even) {
-  background-color: #d6f31f;
+  background-color: #0f2130;
+}
+
+.calc {
+  padding: 10px 0;
 }
 
 * {
@@ -135,8 +149,10 @@ html {
 
 body {
   width: 400px;
+  min-height: 100vh;
+  margin: auto;
   position: relative;
-  background-color: lightgrey;
+  background-color: #eeeeee;
   border-radius: 5px;
   z-index: 1;
 }
@@ -154,19 +170,19 @@ body {
   font-size: x-large;
 }
 .text-dark {
-  color: #5200ff;
+  color: #000000;
 }
 .text-light {
-  color: #ececec;
+  color: #ffffff;
 }
 .text-primary {
-  color: #5200ff;
+  color: #1f4564;
 }
 .text-primalight {
-  color: #d0baff;
+  color: #f4f8fa;
 }
 .text-secondary {
-  color: #d6f31f;
+  color: #0f2130;
 }
 
 .d-none {
@@ -189,12 +205,8 @@ body {
   opacity: 50%;
 }
 
-.blockLayer {
-  position: absolute;
-  z-index: 9;
-  width: 100%;
-  height: 500vh;
-  background-color: white;
+.nonselect {
+  user-select: none;
 }
 
 #vertical {
@@ -204,7 +216,7 @@ body {
   transform: rotate(-90deg) translate(-50%, 200%);
   font-size: 2rem;
   font-weight: 700;
-  color: #d0baff;
+  color: #f4f8fa;
 }
 @media (min-width: 768px) {
   #vertical {
@@ -213,11 +225,17 @@ body {
   }
 }
 
+button {
+  border-radius: 0px;
+  background-color: #0f2130;
+  color: #ffffff;
+}
+
 #footer {
   width: 100%;
   padding: 0.7rem;
   margin-top: 10px;
-  background-color: #5200ff;
+  background-color: #1f4564;
 }
 
 /*# sourceMappingURL=style.css.map */
