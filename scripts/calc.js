@@ -17,6 +17,10 @@ export default function setCalc() {
         shuffle(answers);
         //Append them to your input.
         calcAnswer.innerHTML = "";
+        let defaultSelection = document.createElement("option");
+        defaultSelection.setAttribute("selected", "selected");
+        defaultSelection.innerHTML = " ";
+        calcAnswer.appendChild(document.createElement("div").appendChild(defaultSelection));
         for (let i = 0; i < answers.length; i++) {
             let option = document.createElement("option");
             let j = answers[i];
