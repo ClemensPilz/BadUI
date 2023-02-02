@@ -43,8 +43,8 @@ export default async function setCarousel() {
         resultDiv.innerHTML = 'It took you ' + minutes + ' Minutes and ' + extraSeconds + ' Seconds to complete the Challenge!';
         document.body.appendChild(resultDiv);
         let resultObj = {
-            "minutes": minutes,
-            "seconds": extraSeconds
+            minutes,
+            extraSeconds
         };
         checkStorage(resultObj);
     }
